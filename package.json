@@ -1,0 +1,22 @@
+{
+  "name": "kdbot",
+  "version": "1.0.0",
+  "description": "Delta Lab's resident helpful bot!",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NUDelta/kdbot.git"
+  },
+  "author": "Kevin J. Chen <kevinchen2016@u.northwestern.edu> (http://kevinchen.ninja/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NUDelta/kdbot/issues"
+  },
+  "homepage": "https://github.com/NUDelta/kdbot#readme",
+  "dependencies": {
+    "botkit": "0.0.5"
+  }
+}
