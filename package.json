@@ -4,7 +4,8 @@
   "description": "Delta Lab's resident helpful bot!",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon kdbot.js",
+    "up": "nodemon kdbot.js",
+    "start": "node kdbot.js",
     "test": "test"
   },
   "repository": {
