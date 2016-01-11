@@ -21,8 +21,16 @@ controller.hears(['compliment me'], ['direct_message', 'direct_mention'], (bot, 
   bot.reply(message, selectRandomFromArray(compliments));
 });
 
+controller.hears(['compliment (<@.*>)'], ['direct_message', 'direct_mention'], (bot, message) => {
+  bot.reply(message, `${message.match[1]} ${selectRandomFromArray(compliments)}`);
+});
+
 controller.hears(['insult me'], ['direct_message', 'direct_mention'], (bot, message) => {
   bot.reply(message, selectRandomFromArray(insults));
+});
+
+controller.hears(['insult (<@.*>)'], ['direct_message', 'direct_mention'], (bot, message) => {
+  bot.reply(message, `${message.match[1]} ${selectRandomFromArray(insults)}`);
 });
 
 function selectRandomFromArray(array) {
