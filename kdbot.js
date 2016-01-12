@@ -13,7 +13,7 @@ controller.spawn({
   }
 });
 
-controller.hears(['hi'], ['direct_message', 'ambient', 'direct_mention'], (bot, message) => {
+controller.hears(['kdbot'], ['direct_message', 'ambient', 'direct_mention'], (bot, message) => {
   bot.reply(message, 'Looks like Heroku\'s back up!');
 });
 
